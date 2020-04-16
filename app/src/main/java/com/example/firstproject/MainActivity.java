@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         button=f(R.id.button);
         button.setOnClickListener(v -> {
             Toast.makeText(this, "666", Toast.LENGTH_SHORT).show();
+            textView.setText("changed !");
         });
     }
 
