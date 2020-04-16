@@ -2,6 +2,7 @@ package com.example.firstproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(v -> {
             Toast.makeText(this, "666", Toast.LENGTH_SHORT).show();
             textView.setText("changed !");
+            Intent intent = new Intent(this, SecondActivity.class);
+            startActivity(intent);
         });
     }
 
